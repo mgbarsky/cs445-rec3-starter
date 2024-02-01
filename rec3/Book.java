@@ -43,6 +43,10 @@ public class Book {
     	String result = sb.toString();
     	return result.substring(0, result.length() - 2);
     }
+
+    public boolean equals(Object  b) {
+    	return this.isbn.equals(((Book)b).isbn);
+    }
     
     public String toString() {
     	StringBuilder sb = new StringBuilder();
