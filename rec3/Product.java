@@ -24,6 +24,11 @@ public class Product{
 	public void setPrice(float price) {
 		this.price = price;
 	}
+
+	public boolean equals(Object o) {
+		Product p = (Product) o;
+		return (this.name.equals(p.name) && this.price == p.price);
+	}
 	
 	public boolean equals(Product p) {
 		return (this.name.equals(p.name) && this.price == p.price);
